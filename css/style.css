@@ -527,3 +527,32 @@ h6,
 }
 
 /* logo ednd  */
+
+/* corusal  */
+/* Reduce carousel height */
+#header-carousel .carousel-item img {
+    height: 80vh;          /* try 60vh or 65vh if needed */
+    object-fit: cover;    /* keeps image nicely cropped */
+}
+
+
+
+/* crousal end  */
+
+
+/* about strt  */
+/* About section spacing */
+.container-xxl {
+    overflow: hidden;
+}
+
+img {
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+
+/* about end  */
