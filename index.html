@@ -102,6 +102,161 @@
       .why-card:hover h3 {
         color: #fff;
       }
+
+
+     
+      /* Vision & Mission Section */
+.vm-section {
+  padding: 90px 20px;
+  background: #f4f9f4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.vm-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.vm-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f4d2b;
+  margin-bottom: 10px;
+}
+
+.vm-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* Cards Layout */
+.vm-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Card */
+.vm-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+  position: relative;
+}
+
+/* Top Accent Line */
+.vm-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  border-radius: 18px 18px 0 0;
+}
+
+.vm-card h3 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.vm-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Hover Effect */
+.vm-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* Quality Benchmark Section */
+.quality-section {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #f1f8f4, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.quality-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.quality-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f4d2b;
+  margin-bottom: 15px;
+}
+
+.quality-intro {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* Steps Layout */
+.quality-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card Design */
+.quality-card {
+  background: #ffffff;
+  padding: 45px 30px;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+  position: relative;
+  text-align: left;
+}
+
+/* Step Number */
+.step-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(46, 125, 50, 0.15);
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+/* Card Text */
+.quality-card h3 {
+  font-size: 24px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.quality-card p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Hover Effect */
+.quality-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.15);
+}
+
+
+
     </style>
   </head>
 
@@ -423,6 +578,41 @@
       </div>
     </div>
     <!-- Facts End -->
+
+    <!--Vision And Mission Start -->
+    <section class="vm-section">
+  <div class="vm-container">
+    <h2 class="vm-title">Vision & Mission</h2>
+    <p class="vm-subtitle">
+      Driving innovation in agriculture for a sustainable tomorrow
+    </p>
+
+    <div class="vm-cards">
+      <!-- Vision Card -->
+      <div class="vm-card">
+        <h3>Our Vision</h3>
+        <p>
+          To be a global leader in integrated crop solutions, recognized for
+          transforming agriculture through innovative chemistry and biological
+          excellence, ensuring a sustainable and food-secure future.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="vm-card">
+        <h3>Our Mission</h3>
+        <p>
+          To empower the farming community by manufacturing high-quality,
+          research-driven products—ranging from traditional agrochemicals to
+          advanced biostimulants—that enhance soil health, increase crop yields,
+          and maximize grower profitability.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--Vision And Mission end-->
 
     <!--why choose us start -->
     <section class="why-section">
@@ -847,82 +1037,45 @@
     </div>
     <!-- Projects End -->
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <p class="fs-5 fw-bold text-primary">Our Team</p>
-          <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-1.jpg" alt="" />
-              <div class="team-text">
-                <h4 class="mb-0">Doris Jordan</h4>
-                <p class="text-primary">Landscape Designer</p>
-                <div class="team-social d-flex">
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-2.jpg" alt="" />
-              <div class="team-text">
-                <h4 class="mb-0">Johnny Ramirez</h4>
-                <p class="text-primary">Garden Designer</p>
-                <div class="team-social d-flex">
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item rounded">
-              <img class="img-fluid" src="img/team-3.jpg" alt="" />
-              <div class="team-text">
-                <h4 class="mb-0">Diana Wagner</h4>
-                <p class="text-primary">Senior Gardener</p>
-                <div class="team-social d-flex">
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square rounded-circle me-2" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="quality-section">
+  <div class="quality-container">
+    <h2 class="quality-title">The MKGL Quality Benchmark</h2>
+    <p class="quality-intro">
+      We operate a state-of-the-art manufacturing facility where every product
+      undergoes a rigorous three-tier quality assurance process.
+    </p>
+
+    <div class="quality-steps">
+      <div class="quality-card">
+        <span class="step-number">01</span>
+        <h3>Raw Material Purity</h3>
+        <p>
+          Sourcing only the highest grade inputs to ensure consistency,
+          effectiveness, and safety from the very beginning.
+        </p>
+      </div>
+
+      <div class="quality-card">
+        <span class="step-number">02</span>
+        <h3>In-Process Monitoring</h3>
+        <p>
+          Precision mixing and formulation control through continuous monitoring
+          to maintain exact specifications at every stage.
+        </p>
+      </div>
+
+      <div class="quality-card">
+        <span class="step-number">03</span>
+        <h3>Final Batch Testing</h3>
+        <p>
+          Comprehensive testing to ensure every bottle or bag meets the promised
+          concentration and quality standards.
+        </p>
       </div>
     </div>
-    <!-- Team End -->
+  </div>
+</section>
+
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -1049,28 +1202,24 @@
               </button>
             </div>
           </div>
+            <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MKGL BIO SCIENCE AGRO PVT. LTD.</strong> <span>All Rights Reserved</span>
+      </p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://www.ewebdigital.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
+      </div>
+    </div>
+
         </div>
       </div>
     </div>
     <!-- Footer End -->
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-            Right Reserved.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            Designed By
-            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Copyright End -->
+    
 
     <!-- Back to Top -->
     <a
