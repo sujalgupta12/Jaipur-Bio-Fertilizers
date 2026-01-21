@@ -103,160 +103,152 @@
         color: #fff;
       }
 
-
-     
       /* Vision & Mission Section */
-.vm-section {
-  padding: 90px 20px;
-  background: #f4f9f4;
-  font-family: 'Segoe UI', sans-serif;
-}
+      .vm-section {
+        padding: 90px 20px;
+        background: #f4f9f4;
+        font-family: "Segoe UI", sans-serif;
+      }
 
-.vm-container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-}
+      .vm-container {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+      }
 
-.vm-title {
-  font-size: 42px;
-  font-weight: 700;
-  color: #1f4d2b;
-  margin-bottom: 10px;
-}
+      .vm-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #1f4d2b;
+        margin-bottom: 10px;
+      }
 
-.vm-subtitle {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 60px;
-}
+      .vm-subtitle {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 60px;
+      }
 
-/* Cards Layout */
-.vm-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
+      /* Cards Layout */
+      .vm-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
 
-/* Individual Card */
-.vm-card {
-  background: #ffffff;
-  padding: 40px 30px;
-  border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: 0.4s ease;
-  position: relative;
-}
+      /* Individual Card */
+      .vm-card {
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        transition: 0.4s ease;
+        position: relative;
+      }
 
-/* Top Accent Line */
-.vm-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(90deg, #2e7d32, #66bb6a);
-  border-radius: 18px 18px 0 0;
-}
+      /* Top Accent Line */
+      .vm-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg, #2e7d32, #66bb6a);
+        border-radius: 18px 18px 0 0;
+      }
 
-.vm-card h3 {
-  font-size: 26px;
-  color: #2e7d32;
-  margin-bottom: 20px;
-}
+      .vm-card h3 {
+        font-size: 26px;
+        color: #2e7d32;
+        margin-bottom: 20px;
+      }
 
-.vm-card p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
-}
+      .vm-card p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #444;
+      }
 
-/* Hover Effect */
-.vm-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-}
+      /* Hover Effect */
+      .vm-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+      }
 
+      /* Quality Benchmark Section */
+      .quality-section {
+        padding: 90px 20px;
+        background: linear-gradient(135deg, #f1f8f4, #ffffff);
+        font-family: "Segoe UI", sans-serif;
+      }
 
+      .quality-container {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+      }
 
+      .quality-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #1f4d2b;
+        margin-bottom: 15px;
+      }
 
-/* Quality Benchmark Section */
-.quality-section {
-  padding: 90px 20px;
-  background: linear-gradient(135deg, #f1f8f4, #ffffff);
-  font-family: 'Segoe UI', sans-serif;
-}
+      .quality-intro {
+        font-size: 16px;
+        color: #555;
+        max-width: 700px;
+        margin: 0 auto 60px;
+      }
 
-.quality-container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-}
+      /* Steps Layout */
+      .quality-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
 
-.quality-title {
-  font-size: 42px;
-  font-weight: 700;
-  color: #1f4d2b;
-  margin-bottom: 15px;
-}
+      /* Card Design */
+      .quality-card {
+        background: #ffffff;
+        padding: 45px 30px;
+        border-radius: 20px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+        transition: 0.4s ease;
+        position: relative;
+        text-align: left;
+      }
 
-.quality-intro {
-  font-size: 16px;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 60px;
-}
+      /* Step Number */
+      .step-number {
+        font-size: 48px;
+        font-weight: 700;
+        color: rgba(46, 125, 50, 0.15);
+        position: absolute;
+        top: 20px;
+        right: 25px;
+      }
 
-/* Steps Layout */
-.quality-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
+      /* Card Text */
+      .quality-card h3 {
+        font-size: 24px;
+        color: #2e7d32;
+        margin-bottom: 15px;
+      }
 
-/* Card Design */
-.quality-card {
-  background: #ffffff;
-  padding: 45px 30px;
-  border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
-  transition: 0.4s ease;
-  position: relative;
-  text-align: left;
-}
+      .quality-card p {
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: #444;
+      }
 
-/* Step Number */
-.step-number {
-  font-size: 48px;
-  font-weight: 700;
-  color: rgba(46, 125, 50, 0.15);
-  position: absolute;
-  top: 20px;
-  right: 25px;
-}
-
-/* Card Text */
-.quality-card h3 {
-  font-size: 24px;
-  color: #2e7d32;
-  margin-bottom: 15px;
-}
-
-.quality-card p {
-  font-size: 15.5px;
-  line-height: 1.7;
-  color: #444;
-}
-
-/* Hover Effect */
-.quality-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 28px 60px rgba(0,0,0,0.15);
-}
-
-
-
+      /* Hover Effect */
+      .quality-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
+      }
     </style>
   </head>
 
@@ -341,13 +333,11 @@
               <a href="quote.html" class="dropdown-item">Free Quote</a>
               <a href="team.html" class="dropdown-item">Our Team</a>
               <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              
             </div>
           </div>
           <a href="blog.html" class="nav-item nav-link">blog</a>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        
       </div>
     </nav>
     <!-- Navbar End -->
@@ -488,7 +478,6 @@
             />
           </div>
           <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-           
             <h1 class="display-5 mb-4">
               Welcome to MKGL: Your Partner in High-Performance Crop Solutions
             </h1>
@@ -581,36 +570,37 @@
 
     <!--Vision And Mission Start -->
     <section class="vm-section">
-  <div class="vm-container">
-    <h2 class="vm-title">Vision & Mission</h2>
-    <p class="vm-subtitle">
-      Driving innovation in agriculture for a sustainable tomorrow
-    </p>
-
-    <div class="vm-cards">
-      <!-- Vision Card -->
-      <div class="vm-card">
-        <h3>Our Vision</h3>
-        <p>
-          To be a global leader in integrated crop solutions, recognized for
-          transforming agriculture through innovative chemistry and biological
-          excellence, ensuring a sustainable and food-secure future.
+      <div class="vm-container">
+        <h2 class="vm-title">Vision & Mission</h2>
+        <p class="vm-subtitle">
+          Driving innovation in agriculture for a sustainable tomorrow
         </p>
-      </div>
 
-      <!-- Mission Card -->
-      <div class="vm-card">
-        <h3>Our Mission</h3>
-        <p>
-          To empower the farming community by manufacturing high-quality,
-          research-driven products—ranging from traditional agrochemicals to
-          advanced biostimulants—that enhance soil health, increase crop yields,
-          and maximize grower profitability.
-        </p>
+        <div class="vm-cards">
+          <!-- Vision Card -->
+          <div class="vm-card">
+            <h3>Our Vision</h3>
+            <p>
+              To be a global leader in integrated crop solutions, recognized for
+              transforming agriculture through innovative chemistry and
+              biological excellence, ensuring a sustainable and food-secure
+              future.
+            </p>
+          </div>
+
+          <!-- Mission Card -->
+          <div class="vm-card">
+            <h3>Our Mission</h3>
+            <p>
+              To empower the farming community by manufacturing high-quality,
+              research-driven products—ranging from traditional agrochemicals to
+              advanced biostimulants—that enhance soil health, increase crop
+              yields, and maximize grower profitability.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!--Vision And Mission end-->
 
@@ -1038,44 +1028,43 @@
     <!-- Projects End -->
 
     <section class="quality-section">
-  <div class="quality-container">
-    <h2 class="quality-title">The MKGL Quality Benchmark</h2>
-    <p class="quality-intro">
-      We operate a state-of-the-art manufacturing facility where every product
-      undergoes a rigorous three-tier quality assurance process.
-    </p>
-
-    <div class="quality-steps">
-      <div class="quality-card">
-        <span class="step-number">01</span>
-        <h3>Raw Material Purity</h3>
-        <p>
-          Sourcing only the highest grade inputs to ensure consistency,
-          effectiveness, and safety from the very beginning.
+      <div class="quality-container">
+        <h2 class="quality-title">The MKGL Quality Benchmark</h2>
+        <p class="quality-intro">
+          We operate a state-of-the-art manufacturing facility where every
+          product undergoes a rigorous three-tier quality assurance process.
         </p>
-      </div>
 
-      <div class="quality-card">
-        <span class="step-number">02</span>
-        <h3>In-Process Monitoring</h3>
-        <p>
-          Precision mixing and formulation control through continuous monitoring
-          to maintain exact specifications at every stage.
-        </p>
-      </div>
+        <div class="quality-steps">
+          <div class="quality-card">
+            <span class="step-number">01</span>
+            <h3>Raw Material Purity</h3>
+            <p>
+              Sourcing only the highest grade inputs to ensure consistency,
+              effectiveness, and safety from the very beginning.
+            </p>
+          </div>
 
-      <div class="quality-card">
-        <span class="step-number">03</span>
-        <h3>Final Batch Testing</h3>
-        <p>
-          Comprehensive testing to ensure every bottle or bag meets the promised
-          concentration and quality standards.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="quality-card">
+            <span class="step-number">02</span>
+            <h3>In-Process Monitoring</h3>
+            <p>
+              Precision mixing and formulation control through continuous
+              monitoring to maintain exact specifications at every stage.
+            </p>
+          </div>
 
+          <div class="quality-card">
+            <span class="step-number">03</span>
+            <h3>Final Batch Testing</h3>
+            <p>
+              Comprehensive testing to ensure every bottle or bag meets the
+              promised concentration and quality standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -1085,9 +1074,8 @@
             <p class="fs-5 fw-bold text-primary">Testimonial</p>
             <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
             <p class="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet
-              lorem sit clita duo justo.
+              Trusted by farmers, distributors, and agribusiness partners across
+              regions
             </p>
             <a class="btn btn-primary py-3 px-4" href="">See More</a>
           </div>
@@ -1096,16 +1084,16 @@
               <div class="testimonial-item">
                 <img
                   class="img-fluid rounded mb-3"
-                  src="img/testimonial-1.jpg"
+                  src="img/testominal.jfif"
                   alt=""
                 />
                 <p class="fs-5">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  “MKGL products have significantly improved soil health &
+                  crop yield on farm. The quality and consistency are truly
+                  outstanding.”
                 </p>
-                <h4>Client Name</h4>
-                <span>Profession</span>
+                <h4>Ramesh Patil</h4>
+                <span>Progressive Farmer</span>
               </div>
               <div class="testimonial-item">
                 <img
@@ -1114,12 +1102,11 @@
                   alt=""
                 />
                 <p class="fs-5">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  “Their biostimulant range delivers visible results. MKGL has
+                  become our most trusted partner for crop solutions.”
                 </p>
-                <h4>Client Name</h4>
-                <span>Profession</span>
+                <h4>Sunil Deshmukh</h4>
+                <span>Agriculture Distributor</span>
               </div>
             </div>
           </div>
@@ -1138,7 +1125,8 @@
           <div class="col-lg-3 col-md-6">
             <h4 class="text-white mb-4">Our Office</h4>
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>31 A, Banpuri, Tal. Khatav, Dist. Satara, Pin - 415507
+              <i class="fa fa-map-marker-alt me-3"></i>31 A, Banpuri, Tal.
+              Khatav, Dist. Satara, Pin - 415507
             </p>
             <p class="mb-2">
               <i class="fa fa-phone-alt me-3"></i>+91 9270107722
@@ -1202,24 +1190,27 @@
               </button>
             </div>
           </div>
-            <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MKGL BIO SCIENCE AGRO PVT. LTD.</strong> <span>All Rights Reserved</span>
-      </p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://www.ewebdigital.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
-      </div>
-    </div>
-
+          <div class="container copyright text-center mt-4">
+            <p>
+              © <span>Copyright</span>
+              <strong class="px-1 sitename"
+                >MKGL BIO SCIENCE AGRO PVT. LTD.</strong
+              >
+              <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://www.ewebdigital.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+              Designed by
+              <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Footer End -->
-
-    
 
     <!-- Back to Top -->
     <a
