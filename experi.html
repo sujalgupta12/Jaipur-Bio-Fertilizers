@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKGL | Heritage of Innovation, Future of Farming</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Subtle Grid Pattern */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        }
+
+        /* Carousel Fade Effect */
+        .slide {
+            transition: opacity 1000ms ease-in-out;
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .slide.active {
+            opacity: 1;
+            z-index: 10;
+            pointer-events: auto;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-white text-emerald-950 selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-emerald-100 bg-white/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-2 group shrink-0">
+                <div class="w-9 h-9 bg-emerald-600 rounded border border-emerald-500 flex items-center justify-center text-white group-hover:scale-105 transition-transform duration-300 shadow-sm shadow-emerald-200">
+                    <iconify-icon icon="solar:leaf-linear" width="22" stroke-width="1.5"></iconify-icon>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-emerald-950">MKGL</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-500">
+                <a href="#home" class="hover:text-emerald-600 transition-colors">Home</a>
+                <a href="#about" class="hover:text-emerald-600 transition-colors">About Us</a>
+                <a href="#services" class="hover:text-emerald-600 transition-colors">Services</a>
+                <a href="#products" class="hover:text-emerald-600 transition-colors">Products</a>
+                <a href="#certificates" class="hover:text-emerald-600 transition-colors">Certificates</a>
+                <a href="#blog" class="hover:text-emerald-600 transition-colors">Blog</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden md:flex items-center gap-2 bg-emerald-950 hover:bg-emerald-900 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all shadow-lg shadow-emerald-900/20 hover:shadow-emerald-900/30">
+                    <span>Contact Us</span>
+                    <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+                </a>
+                
+                <!-- Mobile Menu Icon -->
+                <button class="lg:hidden text-emerald-950 p-1">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="28"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <header id="home" class="relative h-screen min-h-[700px] overflow-hidden flex items-center justify-center border-b border-emerald-100">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 bg-grid -z-10"></div>
+        <div class="absolute top-0 right-0 -z-20 w-1/2 h-1/2 bg-gradient-to-br from-emerald-100/40 to-transparent blur-3xl opacity-60"></div>
+        
+        <!-- Slides Container -->
+        <div id="hero-carousel" class="w-full h-full absolute inset-0">
+            <!-- Slide 1 -->
+            <div class="slide active flex items-center justify-center h-full w-full">
+                <div class="max-w-7xl mx-auto px-6 text-center pt-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 shadow-sm mb-8 animate-fade-in-up">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                        <span class="text-xs font-medium text-emerald-800 tracking-wide uppercase">Innovation in Agriculture</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-emerald-950 mb-8 max-w-5xl mx-auto leading-[1.05]">
+                        Catalyst for a <span class="text-emerald-600">greener</span><br> agricultural revolution.
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                        From rejuvenating the soil to maximizing harvest quality, our integrated solutions ensure every seed reaches its full potential through science and sustainability.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#products" class="h-12 px-8 rounded-full bg-emerald-950 text-white text-sm font-medium flex items-center justify-center hover:bg-emerald-900 transition-all shadow-xl shadow-emerald-900/20">
+                            Explore Solutions
+                        </a>
+                        <a href="#about" class="h-12 px-8 rounded-full border border-emerald-200 text-emerald-900 text-sm font-medium flex items-center justify-center hover:bg-emerald-50 transition-all bg-white hover:border-emerald-300">
+                            Our Heritage
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide flex items-center justify-center h-full w-full">
+                <div class="max-w-7xl mx-auto px-6 text-center pt-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 shadow-sm mb-8">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                        <span class="text-xs font-medium text-emerald-800 tracking-wide uppercase">Soil Health First</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-emerald-950 mb-8 max-w-5xl mx-auto leading-[1.05]">
+                        Restoring the <span class="text-emerald-600">Earth's</span><br> natural balance.
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                        Our organic formulations and bio-stimulants work in harmony with nature to rebuild soil structure, microbiome diversity, and long-term fertility.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#products" class="h-12 px-8 rounded-full bg-emerald-950 text-white text-sm font-medium flex items-center justify-center hover:bg-emerald-900 transition-all shadow-xl shadow-emerald-900/20">
+                            View Bio-Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide flex items-center justify-center h-full w-full">
+                <div class="max-w-7xl mx-auto px-6 text-center pt-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 shadow-sm mb-8">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                        <span class="text-xs font-medium text-emerald-800 tracking-wide uppercase">Maximum Yield</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-emerald-950 mb-8 max-w-5xl mx-auto leading-[1.05]">
+                        Precision <span class="text-emerald-600">chemistry</span><br> for higher profits.
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                        Targeted agrochemicals that protect your crops against pests and diseases without compromising on environmental sustainability or safety.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#contact" class="h-12 px-8 rounded-full bg-emerald-950 text-white text-sm font-medium flex items-center justify-center hover:bg-emerald-900 transition-all shadow-xl shadow-emerald-900/20">
+                            Partner With Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+            <button onclick="goToSlide(0)" class="w-2.5 h-2.5 rounded-full bg-emerald-950 transition-all indicator active"></button>
+            <button onclick="goToSlide(1)" class="w-2.5 h-2.5 rounded-full bg-emerald-200 hover:bg-emerald-400 transition-all indicator"></button>
+            <button onclick="goToSlide(2)" class="w-2.5 h-2.5 rounded-full bg-emerald-200 hover:bg-emerald-400 transition-all indicator"></button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-emerald-50/30 border-b border-emerald-100 relative">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-200 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header -->
+            <div class="max-w-3xl mb-16">
+                <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Who We Are</span>
+                <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-emerald-950 mb-6">
+                    Heritage of Innovation,<br>Future of Farming.
+                </h2>
+                <p class="text-lg text-slate-600 leading-relaxed font-light">
+                    At MKGL, we treat the soil as the world's most precious resource. Established with a vision to revolutionize traditional farming, we have grown into a premier manufacturer bridging the gap between biological science and practical agriculture.
+                </p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid lg:grid-cols-3 gap-12 mb-20">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-700 mb-6">
+                        <iconify-icon icon="solar:target-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-950 mb-3">Our Mission</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        To empower farmers with cost-effective, high-quality agricultural inputs that enhance yield while preserving the ecological balance of the land for future generations.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-700 mb-6">
+                        <iconify-icon icon="solar:telescope-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-950 mb-3">Our Vision</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        To become a global leader in sustainable agriculture, recognized for our research-driven innovations in bio-fertilizers and eco-friendly crop protection.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-700 mb-6">
+                        <iconify-icon icon="solar:heart-angle-linear" width="24"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-950 mb-3">Core Values</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Integrity in business, quality in manufacturing, and a relentless commitment to the farmer's prosperity guide every decision we make.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Detailed History / Stats -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center border-t border-emerald-100 pt-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-emerald-950 mb-4">A Decade of Growth</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        What started as a small laboratory has expanded into a fully automated manufacturing hub. Our journey is marked by continuous R&D, expanding from basic NPK mixtures to complex chelated micronutrients and next-gen biostimulants.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-700">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500"></iconify-icon>
+                            <span>Over 50+ proprietary formulations</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500"></iconify-icon>
+                            <span>Serving 10,000+ farmers across the region</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500"></iconify-icon>
+                            <span>State-of-the-art QC Laboratory</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-emerald-950 rounded-2xl p-10 text-white relative overflow-hidden">
+                     <div class="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-emerald-500/20 blur-3xl rounded-full"></div>
+                     <div class="grid grid-cols-2 gap-8 relative z-10">
+                         <div>
+                             <span class="text-4xl font-bold block mb-1">15+</span>
+                             <span class="text-emerald-300 text-sm">Years Experience</span>
+                         </div>
+                         <div>
+                             <span class="text-4xl font-bold block mb-1">100%</span>
+                             <span class="text-emerald-300 text-sm">Quality Tested</span>
+                         </div>
+                         <div>
+                             <span class="text-4xl font-bold block mb-1">200+</span>
+                             <span class="text-emerald-300 text-sm">Distributors</span>
+                         </div>
+                         <div>
+                             <span class="text-4xl font-bold block mb-1">24/7</span>
+                             <span class="text-emerald-300 text-sm">Agronomy Support</span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-white border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Our Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-emerald-950 mb-6">Comprehensive Services</h2>
+                <p class="text-slate-500 text-lg">Beyond products, we offer a suite of technical and support services to ensure you get the most out of your harvest.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="group p-8 bg-white border border-emerald-100 rounded-xl hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <iconify-icon icon="solar:test-tube-minimalistic-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-emerald-950 mb-3">Soil Analysis</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Precision laboratory testing of soil samples to determine pH, nutrient levels, and organic carbon content for tailored fertilizer recommendations.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group p-8 bg-white border border-emerald-100 rounded-xl hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <iconify-icon icon="solar:user-hand-up-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-emerald-950 mb-3">Agronomy Consulting</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Expert field visits and advisory services to help farmers identify pests, diseases, and nutrient deficiencies early in the crop cycle.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group p-8 bg-white border border-emerald-100 rounded-xl hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <iconify-icon icon="solar:box-minimalistic-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-emerald-950 mb-3">Contract Manufacturing</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        White-label formulation and packaging services for partners, utilizing our advanced automated production lines and QC protocols.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group p-8 bg-white border border-emerald-100 rounded-xl hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <iconify-icon icon="solar:delivery-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-emerald-950 mb-3">Logistics & Export</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        Streamlined supply chain solutions ensuring timely delivery of bulk agrochemicals to distributors and international markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-32 bg-emerald-50/20 border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Our Catalog</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-emerald-950 mb-4">Product Portfolio</h2>
+                    <p class="text-slate-500 max-w-2xl text-lg">We provide a 360-degree approach to plant health through six core specialized categories.</p>
+                </div>
+                <a href="#" class="h-10 px-5 rounded-full border border-emerald-200 text-emerald-800 text-sm font-medium flex items-center justify-center hover:bg-emerald-50 transition-all bg-white hover:border-emerald-400">
+                    Download Catalog <iconify-icon icon="solar:download-minimalistic-linear" class="ml-2"></iconify-icon>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Biofertilizers -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?q=80&w=800&auto=format&fit=crop" alt="Biofertilizers" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Soil Builders
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Biofertilizers</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            Potent microbial formulations that fix nitrogen, solubilize phosphorus, and mobilize potash to restore soil vitality.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Biostimulants -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=800&auto=format&fit=crop" alt="Biostimulants" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Growth Boosters
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Biostimulants</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            Advanced enzymatic solutions derived from seaweed and amino acids to improve stress tolerance and fruit quality.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Micronutrients -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?q=80&w=800&auto=format&fit=crop" alt="Micronutrients" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Trace Elements
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Micronutrients</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            High-purity chelated Zinc, Boron, Iron, and multi-micronutrient mixtures to correct deficiencies rapidly.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: WSF -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?q=80&w=800&auto=format&fit=crop" alt="WSF" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Instant Feed
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Water Soluble</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            100% soluble fertilizers (NPK) designed specifically for drip irrigation systems and foliar application.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Organic Inputs -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop" alt="Organic" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Eco Friendly
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Organic Inputs</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            Certified organic conditioners and amendments that improve soil structure and water retention capacity.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Agrochemicals -->
+                <div class="bg-white p-5 rounded-2xl border border-emerald-100 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-900/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full aspect-[4/3] bg-emerald-50 rounded-xl mb-6 overflow-hidden relative border border-emerald-50">
+                        <img src="https://images.unsplash.com/photo-1595123550441-d377e017de6a?q=80&w=800&auto=format&fit=crop" alt="Agrochemicals" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur text-emerald-800 text-[10px] font-bold px-2.5 py-1.5 rounded-md shadow-sm uppercase tracking-wide">
+                            Protection
+                        </div>
+                    </div>
+                    <div class="px-1">
+                        <h3 class="text-xl font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Agrochemicals</h3>
+                        <p class="text-sm text-slate-500 mb-5 leading-relaxed">
+                            A curated range of high-efficacy pesticides, herbicides, and fungicides for targeted pest management.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-medium text-emerald-600 pt-4 border-t border-emerald-50">
+                            <span>View Products</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-32 bg-white border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Quality Assurance</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-emerald-950 mb-6">Certified Excellence</h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Our commitment to quality is not just a promise; it is validated by national and international standards bodies. We adhere to strict manufacturing protocols to ensure every batch meets the highest benchmarks of purity and safety.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><iconify-icon icon="solar:verified-check-linear" width="24"></iconify-icon></div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950">ISO 9001:2015 Certified</h4>
+                                <p class="text-sm text-slate-500 mt-1">Recognized for our quality management systems in manufacturing.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><iconify-icon icon="solar:leaf-bold" width="24"></iconify-icon></div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950">NOCA Organic Certified</h4>
+                                <p class="text-sm text-slate-500 mt-1">Validating our organic inputs as safe and chemical-free.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><iconify-icon icon="solar:shield-check-linear" width="24"></iconify-icon></div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950">Government Approved</h4>
+                                <p class="text-sm text-slate-500 mt-1">Licensed by the Department of Agriculture for manufacturing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate Visuals -->
+                <div class="bg-emerald-50 rounded-2xl p-8 border border-emerald-100 grid grid-cols-2 gap-4">
+                    <!-- Mock Cert 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-emerald-50 text-center flex flex-col items-center justify-center aspect-[3/4]">
+                        <iconify-icon icon="solar:diploma-verified-linear" width="48" class="text-emerald-900 mb-4 opacity-80"></iconify-icon>
+                        <h5 class="font-bold text-emerald-950 mb-1">ISO 9001</h5>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">Certified</span>
+                    </div>
+                    <!-- Mock Cert 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-emerald-50 text-center flex flex-col items-center justify-center aspect-[3/4] translate-y-4">
+                        <iconify-icon icon="solar:leaf-circle-linear" width="48" class="text-emerald-600 mb-4 opacity-80"></iconify-icon>
+                        <h5 class="font-bold text-emerald-950 mb-1">Organic</h5>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">NOCA</span>
+                    </div>
+                    <!-- Mock Cert 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-emerald-50 text-center flex flex-col items-center justify-center aspect-[3/4]">
+                        <iconify-icon icon="solar:test-tube-linear" width="48" class="text-emerald-800 mb-4 opacity-80"></iconify-icon>
+                        <h5 class="font-bold text-emerald-950 mb-1">Lab Tested</h5>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">Approved</span>
+                    </div>
+                    <!-- Mock Cert 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-emerald-50 text-center flex flex-col items-center justify-center aspect-[3/4] translate-y-4">
+                        <iconify-icon icon="solar:medal-star-linear" width="48" class="text-emerald-500 mb-4 opacity-80"></iconify-icon>
+                        <h5 class="font-bold text-emerald-950 mb-1">Excellence</h5>
+                        <span class="text-xs text-slate-400 uppercase tracking-wide">Awarded</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-32 bg-slate-50 border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Knowledge Hub</span>
+                <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-emerald-950 mb-6">Agricultural Insights</h2>
+                <p class="text-slate-500 text-lg">Stay updated with the latest trends in sustainable farming, crop management tips, and company news.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop" alt="Blog 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+                            <span>Oct 12, 2023</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Soil Health</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-emerald-950 mb-3 leading-tight hover:text-emerald-700 cursor-pointer">The Impact of Organic Carbon on Crop Yields</h3>
+                        <p class="text-sm text-slate-500 mb-4 line-clamp-3">
+                            Understanding how increasing soil organic carbon levels can significantly improve water retention and nutrient availability.
+                        </p>
+                        <a href="#" class="text-emerald-600 text-sm font-medium hover:text-emerald-800">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599586120429-48285b6a8a81?q=80&w=800&auto=format&fit=crop" alt="Blog 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+                            <span>Sep 28, 2023</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Technology</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-emerald-950 mb-3 leading-tight hover:text-emerald-700 cursor-pointer">Modern Fertigation Techniques Explained</h3>
+                        <p class="text-sm text-slate-500 mb-4 line-clamp-3">
+                            A deep dive into how water-soluble fertilizers are revolutionizing drip irrigation systems for small-scale farmers.
+                        </p>
+                        <a href="#" class="text-emerald-600 text-sm font-medium hover:text-emerald-800">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1615811361524-7f323c681285?q=80&w=800&auto=format&fit=crop" alt="Blog 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+                            <span>Sep 15, 2023</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>Company News</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-emerald-950 mb-3 leading-tight hover:text-emerald-700 cursor-pointer">MKGL Expands Production Facility</h3>
+                        <p class="text-sm text-slate-500 mb-4 line-clamp-3">
+                            We are proud to announce the inauguration of our new liquid bio-fertilizer unit to meet growing market demand.
+                        </p>
+                        <a href="#" class="text-emerald-600 text-sm font-medium hover:text-emerald-800">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-emerald-600 font-semibold text-xs tracking-widest uppercase mb-3 block">Get In Touch</span>
+                    <h2 class="text-4xl font-semibold tracking-tight text-emerald-950 mb-6">Let's Grow Together</h2>
+                    <p class="text-slate-500 text-lg mb-10 leading-relaxed">
+                        Have a question about our products, or interested in becoming a distributor? Reach out to our team. We are here to support your agricultural journey.
+                    </p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                <iconify-icon icon="solar:map-point-linear" width="24"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950 text-lg">Headquarters</h4>
+                                <p class="text-slate-500 mt-1 leading-relaxed w-3/4">MKGL, 31 A , Banpuri, Tal. Khatav, Dist. Satara - 455507, Maharashtra, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                <iconify-icon icon="solar:phone-calling-linear" width="24"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950 text-lg">Phone</h4>
+                                <p class="text-slate-500 mt-1">+91 8007297177</p>
+                                <p class="text-slate-400 text-sm">Mon-Fri, 9am - 6pm IST</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                <iconify-icon icon="solar:letter-linear" width="24"></iconify-icon>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-emerald-950 text-lg">Email</h4>
+                                <p class="text-slate-500 mt-1">mkgl7777@gmail.com</p>
+                                <p class="text-slate-400 text-sm">Online Support 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl border border-emerald-100 p-8 shadow-xl shadow-emerald-900/5">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-emerald-900">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all text-sm" placeholder="John">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-emerald-900">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all text-sm" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-emerald-900">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all text-sm" placeholder="john@example.com">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-emerald-900">Subject</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all text-sm text-slate-500">
+                                <option>Product Inquiry</option>
+                                <option>Distributorship</option>
+                                <option>Technical Support</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-emerald-900">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all text-sm" placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <button class="w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium py-3.5 rounded-lg transition-colors shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2">
+                            Send Message
+                            <iconify-icon icon="solar:plain-3-linear" class="-rotate-45"></iconify-icon>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 pt-24 pb-10 text-white border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Top Section -->
+            <div class="grid lg:grid-cols-4 gap-12 mb-20">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white">
+                            <iconify-icon icon="solar:leaf-bold" width="24"></iconify-icon>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight text-white">MKGL</span>
+                    </div>
+                    <p class="text-emerald-300/70 text-sm leading-relaxed mb-8">
+                        Empowering the farming community with high-quality, research-driven products that enhance soil health and maximize profitability.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center text-emerald-300 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white transition-all"><iconify-icon icon="brandico:facebook" width="16"></iconify-icon></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center text-emerald-300 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white transition-all"><iconify-icon icon="brandico:twitter-bird" width="16"></iconify-icon></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-emerald-900/50 border border-emerald-800 flex items-center justify-center text-emerald-300 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white transition-all"><iconify-icon icon="brandico:linkedin" width="16"></iconify-icon></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-emerald-300/70">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-colors">Services</a></li>
+                        <li><a href="#blog" class="hover:text-emerald-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Products</h4>
+                    <ul class="space-y-4 text-sm text-emerald-300/70">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Biofertilizers</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Biostimulants</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Micronutrients</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Agrochemicals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="lg:col-span-1">
+                    <h4 class="text-white font-semibold mb-6">Newsletter</h4>
+                    <p class="text-sm text-emerald-300/70 mb-4">Subscribe for the latest in agricultural tech and company updates.</p>
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="Enter your email" class="w-full bg-emerald-900/30 border border-emerald-800 rounded-lg px-4 py-3 text-sm text-white placeholder-emerald-600 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all">
+                        <button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium px-4 py-3 rounded-lg transition-colors shadow-lg shadow-emerald-900/50">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-emerald-900 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-emerald-400/50">
+                <p>© 2023 MKGL Industries. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-emerald-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-emerald-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Simple Carousel Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const intervalTime = 6000;
+        let slideInterval;
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            indicators.forEach((ind, index) => {
+                if (index === currentSlide) {
+                    ind.classList.remove('bg-emerald-200');
+                    ind.classList.add('bg-emerald-950');
+                } else {
+                    ind.classList.add('bg-emerald-200');
+                    ind.classList.remove('bg-emerald-950');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlides();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+            resetInterval();
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+
+        resetInterval();
+    </script>
+</body>
+</html>
