@@ -1,1164 +1,1195 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>MKGl</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/with_bg_logo.png" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>MKGl</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/with_bg_logo.png" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <style>
-      /* WHY SECTION */
-      .why-section {
-        background: linear-gradient(135deg, #788b89, #728f8c, #49585f);
-        padding: 80px 20px;
-        color: #fff;
-        font-family: "Segoe UI", sans-serif;
-      }
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-      .why-container {
-        max-width: 1200px;
-        margin: auto;
-        text-align: center;
-      }
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    /* WHY SECTION */
+    .why-section {
+      background: linear-gradient(135deg, #788b89, #728f8c, #49585f);
+      padding: 80px 20px;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+    }
 
-      .why-title {
-        font-size: 40px;
-        margin-bottom: 10px;
-        font-weight: 700;
-      }
+    .why-container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
 
-      .why-subtitle {
-        font-size: 16px;
-        color: #541313;
-        margin-bottom: 50px;
-      }
+    .why-title {
+      font-size: 40px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
 
-      /* Cards */
-      .why-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-      }
+    .why-subtitle {
+      font-size: 16px;
+      color: #541313;
+      margin-bottom: 50px;
+    }
 
-      .why-card {
-        background: #ffffff;
-        color: #333;
-        padding: 30px 25px;
-        border-radius: 15px;
-        transition: 0.4s ease;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      }
+    /* Cards */
+    .why-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
 
-      .why-card h3 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        color: #076940;
-      }
+    .why-card {
+      background: #ffffff;
+      color: #333;
+      padding: 30px 25px;
+      border-radius: 15px;
+      transition: 0.4s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
 
-      .why-card p {
-        font-size: 15px;
-        line-height: 1.6;
-      }
+    .why-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #076940;
+    }
 
-      /* Hover Effect */
-      .why-card:hover {
-        transform: translateY(-10px);
-        background: #2c5364;
-        color: #fff;
-      }
+    .why-card p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
 
-      .why-card:hover h3 {
-        color: #fff;
-      }
+    /* Hover Effect */
+    .why-card:hover {
+      transform: translateY(-10px);
+      background: #2c5364;
+      color: #fff;
+    }
 
-      /* Vision & Mission Section */
-      .vm-section {
-        padding: 90px 20px;
-        background: #f4f9f4;
-        font-family: "Segoe UI", sans-serif;
-      }
+    .why-card:hover h3 {
+      color: #fff;
+    }
 
-      .vm-container {
-        max-width: 1200px;
-        margin: auto;
-        text-align: center;
-      }
+    /* Vision & Mission Section */
+    .vm-section {
+      padding: 90px 20px;
+      background: #f4f9f4;
+      font-family: "Segoe UI", sans-serif;
+    }
 
-      .vm-title {
-        font-size: 42px;
-        font-weight: 700;
-        color: #1f4d2b;
-        margin-bottom: 10px;
-      }
+    .vm-container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
 
-      .vm-subtitle {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 60px;
-      }
+    .vm-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #1f4d2b;
+      margin-bottom: 10px;
+    }
 
-      /* Cards Layout */
-      .vm-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 30px;
-      }
+    .vm-subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 60px;
+    }
 
-      /* Individual Card */
-      .vm-card {
-        background: #ffffff;
-        padding: 40px 30px;
-        border-radius: 18px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-        transition: 0.4s ease;
-        position: relative;
-      }
+    /* Cards Layout */
+    .vm-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
 
-      /* Top Accent Line */
-      .vm-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 6px;
-        background: linear-gradient(90deg, #2e7d32, #66bb6a);
-        border-radius: 18px 18px 0 0;
-      }
+    /* Individual Card */
+    .vm-card {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      transition: 0.4s ease;
+      position: relative;
+    }
 
-      .vm-card h3 {
-        font-size: 26px;
-        color: #2e7d32;
-        margin-bottom: 20px;
-      }
+    /* Top Accent Line */
+    .vm-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      border-radius: 18px 18px 0 0;
+    }
 
-      .vm-card p {
-        font-size: 16px;
-        line-height: 1.8;
-        color: #444;
-      }
+    .vm-card h3 {
+      font-size: 26px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
 
-      /* Hover Effect */
-      .vm-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-      }
+    .vm-card p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #444;
+    }
 
-      /* Quality Benchmark Section */
-      .quality-section {
-        padding: 90px 20px;
-        background: linear-gradient(135deg, #f1f8f4, #ffffff);
-        font-family: "Segoe UI", sans-serif;
-      }
+    /* Hover Effect */
+    .vm-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
 
-      .quality-container {
-        max-width: 1200px;
-        margin: auto;
-        text-align: center;
-      }
+    /* Quality Benchmark Section */
+    .quality-section {
+      padding: 90px 20px;
+      background: linear-gradient(135deg, #f1f8f4, #ffffff);
+      font-family: "Segoe UI", sans-serif;
+    }
 
-      .quality-title {
-        font-size: 42px;
-        font-weight: 700;
-        color: #1f4d2b;
-        margin-bottom: 15px;
-      }
+    .quality-container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
 
-      .quality-intro {
-        font-size: 16px;
-        color: #555;
-        max-width: 700px;
-        margin: 0 auto 60px;
-      }
+    .quality-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #1f4d2b;
+      margin-bottom: 15px;
+    }
 
-      /* Steps Layout */
-      .quality-steps {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-      }
+    .quality-intro {
+      font-size: 16px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
 
-      /* Card Design */
-      .quality-card {
-        background: #ffffff;
-        padding: 45px 30px;
-        border-radius: 20px;
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-        transition: 0.4s ease;
-        position: relative;
-        text-align: left;
-      }
+    /* Steps Layout */
+    .quality-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-      /* Step Number */
-      .step-number {
-        font-size: 48px;
-        font-weight: 700;
-        color: rgba(46, 125, 50, 0.15);
-        position: absolute;
-        top: 20px;
-        right: 25px;
-      }
+    /* Card Design */
+    .quality-card {
+      background: #ffffff;
+      padding: 45px 30px;
+      border-radius: 20px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+      transition: 0.4s ease;
+      position: relative;
+      text-align: left;
+    }
 
-      /* Card Text */
-      .quality-card h3 {
-        font-size: 24px;
-        color: #2e7d32;
-        margin-bottom: 15px;
-      }
+    /* Step Number */
+    .step-number {
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(46, 125, 50, 0.15);
+      position: absolute;
+      top: 20px;
+      right: 25px;
+    }
 
-      .quality-card p {
-        font-size: 15.5px;
-        line-height: 1.7;
-        color: #444;
-      }
+    /* Card Text */
+    .quality-card h3 {
+      font-size: 24px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
 
-      /* Hover Effect */
-      .quality-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
-      }
-    </style>
-  </head>
+    .quality-card p {
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: #444;
+    }
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        role="status"
-        style="width: 3rem; height: 3rem"
-      ></div>
-    </div>
-    <!-- Spinner End -->
+    /* Hover Effect */
+    .quality-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-light px-0 py-2">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <span class="fa fa-phone-alt me-2"></span>
-            <span>+91 9270107722</span>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <span class="far fa-envelope me-2"></span>
-            <span>mkglagro7722@gmail.com</span>
-          </div>
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark text-light px-0 py-2">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <span class="fa fa-phone-alt me-2"></span>
+          <span>+91 9270107722</span>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center mx-n2">
-            <span>Follow Us:</span>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-link text-light" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <span class="far fa-envelope me-2"></span>
+          <span>mkglagro7722@gmail.com</span>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center mx-n2">
+          <span>Follow Us:</span>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <!-- <h1 class="m-0">Gardener</h1> -->
-        <img src="img/logo/logo.png" alt="" style="max-width: 94px;">
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <!-- <h1 class="m-0">Gardener</h1> -->
+      <img src="img/logo/logo.png" alt="" style="max-width: 94px;">
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <a href="project.html" class="nav-item nav-link">products</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+          <div class="dropdown-menu bg-light m-0">
+            <a href="feature.html" class="dropdown-item">Features</a>
+            <a href="quote.html" class="dropdown-item">Free Quote</a>
+            <a href="team.html" class="dropdown-item">Our Team</a>
+            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-item nav-link">blog</a>
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/image2.webp" alt="Image" />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <h1 class="display-1 text-white mb-5 animated slideInDown">
+                    Make Your Home Like Garden
+                  </h1>
+                  <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="img/image.webp" alt="Image" />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-7">
+                  <h1 class="display-1 text-white mb-5 animated slideInDown">
+                    Create Your Own Small Garden At Home
+                  </h1>
+                  <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="project.html" class="nav-item nav-link">products</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
-            >
-            <div class="dropdown-menu bg-light m-0">
-              <a href="feature.html" class="dropdown-item">Features</a>
-              <a href="quote.html" class="dropdown-item">Free Quote</a>
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-            </div>
-          </div>
-          <a href="blog.html" class="nav-item nav-link">blog</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="img/image2.webp" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <h1 class="display-1 text-white mb-5 animated slideInDown">
-                      Make Your Home Like Garden
-                    </h1>
-                    <a href="" class="btn btn-primary py-sm-3 px-sm-4"
-                      >Explore More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/image.webp" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                    <h1 class="display-1 text-white mb-5 animated slideInDown">
-                      Create Your Own Small Garden At Home
-                    </h1>
-                    <a href="" class="btn btn-primary py-sm-3 px-sm-4"
-                      >Explore More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- Carousel End -->
+  </div>
+  <!-- Carousel End -->
 
 
-<!-- About Start -->
-<div class="container-xxl py-5">
+  <!-- About Start -->
+  <div class="container-xxl py-5">
     <div class="container">
-        <div class="row g-5 align-items-center">
+      <div class="row g-5 align-items-center">
 
-            <!-- Image -->
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="position-relative">
-                    <img class="img-fluid rounded-3 shadow" src="img/about.jpg" alt="About MKGL">
-                </div>
-            </div>
-
-            <!-- Content -->
-            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
-                <span class="text-primary text-uppercase fw-semibold mb-2 d-inline-block">
-                    About MKGL
-                </span>
-
-                <h1 class="display-6 mb-4">
-                    Your Partner in High-Performance Crop Solutions
-                </h1>
-
-                <p class="text-muted mb-4">
-                    MKGL is a premier manufacturer and innovator in the agricultural
-                    sector, bridging traditional agrochemical expertise with modern
-                    biological science.
-                </p>
-
-                <p class="text-muted mb-4">
-                    By offering everything from micronutrients to biostimulants under
-                    one roof, we deliver a complete <strong>Soil-to-Seed</strong> approach —
-                    ensuring healthier crops, stronger roots, and higher yields.
-                </p>
-
-                <p class="text-muted mb-4">
-                    From rejuvenating the soil to maximizing harvest quality, our
-                    solutions are engineered so every seed reaches its full potential.
-                </p>
-
-                <a class="btn btn-primary py-3 px-4 mt-2" href="about.html">
-                    Learn More About Us
-                </a>
-            </div>
-
+        <!-- Image -->
+        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="position-relative">
+            <img class="img-fluid rounded-3 shadow" src="img/about.jpg" alt="About MKGL">
+          </div>
         </div>
+
+        <!-- Content -->
+        <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
+          <span class="text-primary text-uppercase fw-semibold mb-2 d-inline-block">
+            Welcome to MKGL:
+          </span>
+
+          <h1 class="display-6 mb-4">
+            Your Partner in High-Performance Crop Solutions
+          </h1>
+
+          <p class="text-muted mb-4">
+            At MKGL, we are more than just a manufacturer; we are the catalyst for a greener agricultural revolution.
+            With a commitment to innovation and deep-rooted expertise,
+          </p>
+
+          <p class="text-muted mb-4">
+            we develop and deliver a comprehensive range of crop nutrition and protection products designed to meet the
+            evolving challenges of modern farming.
+          </p>
+
+          <p class="text-muted mb-4">
+            From rejuvenating the soil to maximizing harvest quality, our solutions are engineered to ensure that every
+            seed reaches its full potential.
+          </p>
+
+          <a class="btn btn-primary py-3 px-4 mt-2" href="about.html">
+            Learn More About Us
+          </a>
+        </div>
+
+      </div>
     </div>
-</div>
-<!-- About End -->
+  </div>
+  <!-- About End -->
 
 
-    <!-- Facts Start -->
-    <div
-      class="container-fluid facts my-5 py-5"
-      data-parallax="scroll"
-      data-image-src="img/carousel-1.jpg"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div
-            class="col-sm-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.1s"
-          >
-            <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-            <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
-          </div>
-          <div
-            class="col-sm-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-            <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
-          </div>
-          <div
-            class="col-sm-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-            <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
-          </div>
-          <div
-            class="col-sm-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.7s"
-          >
-            <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-            <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
-          </div>
+  <!-- Facts Start -->
+  <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+          <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+          <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+          <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+          <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
+          <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
         </div>
       </div>
     </div>
-    <!-- Facts End -->
+  </div>
+  <!-- Facts End -->
 
-    <!--Vision And Mission Start -->
-    <section class="vm-section">
-      <div class="vm-container">
-        <h2 class="vm-title">Vision & Mission</h2>
-        <p class="vm-subtitle">
-          Driving innovation in agriculture for a sustainable tomorrow
-        </p>
+  <!-- Product Portfolio Section -->
+  <section class="section nt-bg">
+    <div class="container section-title text-center" data-aos="fade-up">
+      <span class="description-title" style="font-size:60px;">
+        Our Diverse Product Portfolio
+      </span>
+      <p>
+        Scientifically formulated solutions for complete plant health, soil vitality,
+        and sustainable agriculture.
+      </p>
+    </div>
 
-        <div class="vm-cards">
-          <!-- Vision Card -->
-          <div class="vm-card">
-            <h3>Our Vision</h3>
-            <p>
-              To be a global leader in integrated crop solutions, recognized for
-              transforming agriculture through innovative chemistry and
-              biological excellence, ensuring a sustainable and food-secure
-              future.
-            </p>
-          </div>
+    <div class="container">
+      <div class="row g-4">
 
-          <!-- Mission Card -->
-          <div class="vm-card">
-            <h3>Our Mission</h3>
-            <p>
-              To empower the farming community by manufacturing high-quality,
-              research-driven products—ranging from traditional agrochemicals to
-              advanced biostimulants—that enhance soil health, increase crop
-              yields, and maximize grower profitability.
-            </p>
+        <!-- 1. Aceto -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Bio Stimulant</span>
+              <img src="product_info/aceto.jpeg" alt="Aceto">
+            </div>
+            <div class="adv-content">
+              <h4>Aceto</h4>
+              <p class="adv-desc">
+                Enhances plant metabolism, improves nutrient uptake,
+                and promotes vigorous crop growth.
+              </p>
+              <div class="adv-tags">
+                <span>Plant Vigor</span><span>Growth Booster</span><span>Crop Safe</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
           </div>
         </div>
+
+        <!-- 2. Aceto Liquid -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Liquid Bio Stimulant</span>
+              <img src="product_info/aceto.jpeg" alt="Aceto Liquid">
+            </div>
+            <div class="adv-content">
+              <h4>Aceto Liquid</h4>
+              <p class="adv-desc">
+                Fast-absorbing liquid formulation for quick plant energy
+                and early stage crop development.
+              </p>
+              <div class="adv-tags">
+                <span>Quick Action</span><span>Root Support</span><span>Yield Boost</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. KMB Liquid -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Bio Fertilizer</span>
+              <img src="product_info/kmb liq.jpeg" alt="KMB Liquid">
+            </div>
+            <div class="adv-content">
+              <h4>KMB Liquid</h4>
+              <p class="adv-desc">
+                Potassium Mobilizing Bacteria that unlocks soil potassium
+                for stronger crops and better quality yield.
+              </p>
+              <div class="adv-tags">
+                <span>Potassium Mobilizer</span><span>Soil Health</span><span>Sustainable</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Mychosphere -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Mycorrhiza</span>
+              <img src="product_info/mychosphere.jpeg" alt="Mychosphere">
+            </div>
+            <div class="adv-content">
+              <h4>Mychosphere</h4>
+              <p class="adv-desc">
+                Improves root surface area, water absorption,
+                and increases stress tolerance in crops.
+              </p>
+              <div class="adv-tags">
+                <span>Root Expansion</span><span>Water Efficiency</span><span>Stress Control</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Nutriplus -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Micronutrients</span>
+              <img src="product_info/nutriplus.jpeg" alt="Nutriplus">
+            </div>
+            <div class="adv-content">
+              <h4>Nutriplus</h4>
+              <p class="adv-desc">
+                Balanced micronutrient blend to correct deficiencies
+                and improve crop quality and uniform growth.
+              </p>
+              <div class="adv-tags">
+                <span>Balanced Nutrition</span><span>Deficiency Control</span><span>Quality Yield</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Pest Fire Powder -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Organic Pest Control</span>
+              <img src="product_info/pest fire poweder.jpeg" alt="Pest Fire Powder">
+            </div>
+            <div class="adv-content">
+              <h4>Pest Fire (Powder)</h4>
+              <p class="adv-desc">
+                Botanical powder that controls harmful insects
+                while maintaining ecological balance.
+              </p>
+              <div class="adv-tags">
+                <span>Organic</span><span>Pest Control</span><span>Residue Free</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Pest Fire Liquid -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Bio Insecticide</span>
+              <img src="product_info/pest fire.jpeg" alt="Pest Fire Liquid">
+            </div>
+            <div class="adv-content">
+              <h4>Pest Fire (Liquid)</h4>
+              <p class="adv-desc">
+                Fast-acting bio-insecticide effective against sucking
+                and chewing pests.
+              </p>
+              <div class="adv-tags">
+                <span>Rapid Control</span><span>Crop Safe</span><span>Eco Friendly</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. PSB Liquid -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Bio Fertilizer</span>
+              <img src="product_info/psb liq.jpeg" alt="PSB Liquid">
+            </div>
+            <div class="adv-content">
+              <h4>PSB Liquid</h4>
+              <p class="adv-desc">
+                Phosphate Solubilizing Bacteria that increases
+                phosphorus availability in soil.
+              </p>
+              <div class="adv-tags">
+                <span>Phosphorus Release</span><span>Root Growth</span><span>Soil Health</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Root Booster -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Root Enhancer</span>
+              <img src="product_info/root booster.jpeg" alt="Root Booster">
+            </div>
+            <div class="adv-content">
+              <h4>Root Booster</h4>
+              <p class="adv-desc">
+                Encourages deeper root growth,
+                stronger anchorage, and nutrient absorption.
+              </p>
+              <div class="adv-tags">
+                <span>Strong Roots</span><span>Stress Tolerance</span><span>Crop Strength</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Sampurnam Liquid -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="adv-product-card">
+            <div class="adv-image">
+              <span class="badge-category">Organic Nutrition</span>
+              <img src="product_info/sampurnam liq.jpeg" alt="Sampurnam Liquid">
+            </div>
+            <div class="adv-content">
+              <h4>Sampurnam Liquid</h4>
+              <p class="adv-desc">
+                Improves soil biology, nutrient availability,
+                and long-term crop productivity.
+              </p>
+              <div class="adv-tags">
+                <span>Soil Enrichment</span><span>Organic</span><span>Plant Health</span>
+              </div>
+              <a href="#" class="adv-btn">View Product</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--Vision And Mission end-->
 
-    <!--why choose us start -->
-    <section class="why-section">
-      <div class="why-container">
-        <h2 class="why-title">Why MKGL?</h2>
-        <p class="why-subtitle">Every Product Committed To The Farmers ....!</p>
 
-        <div class="why-cards">
-          <div class="why-card">
-            <h3>•Research-Driven Formulations:</h3>
-            <p>
-              Our R&D team works tirelessly to create products that work in
-              diverse climates and soil types.
-            </p>
-          </div>
 
-          <div class="why-card">
-            <h3>•Farmer-Centric Approach:</h3>
-            <p>
-              We don't just sell products; we provide solutions. Every
-              formulation is designed to solve a specific problem, whether it’s
-              nutrient lockout, pest pressure, or soil depletion.
-            </p>
-          </div>
 
-          <div class="why-card">
-            <h3>•Manufacturing Excellence:</h3>
-            <p>
-              Our state-of-the-art facility utilizes advanced automation to
-              ensure that every batch of MKGL product is consistent, potent, and
-              pure.
-            </p>
-          </div>
 
-          <div class="why-card">
-            <h3>•Research-Driven Formulations:</h3>
-            <p>
-              Our R&D team works tirelessly to create products that work in
-              diverse climates and soil types.
-            </p>
-          </div>
+
+
+
+  <!--Vision And Mission Start -->
+  <section class="vm-section">
+    <div class="vm-container">
+      <h2 class="vm-title">Vision & Mission</h2>
+      <p class="vm-subtitle">
+        Driving innovation in agriculture for a sustainable tomorrow
+      </p>
+
+      <div class="vm-cards">
+        <!-- Vision Card -->
+        <div class="vm-card">
+          <h3>Our Vision</h3>
+          <p>
+            To be a global leader in integrated crop solutions, recognized for
+            transforming agriculture through innovative chemistry and
+            biological excellence, ensuring a sustainable and food-secure
+            future.
+          </p>
         </div>
-      </div>
-    </section>
-    <!--why choose us end -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <p class="fs-5 fw-bold text-primary">Our Services</p>
-          <h1 class="display-5 mb-5">Services That We Offer For You</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-1.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Landscaping</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-2.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Pruning plants</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-3.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Irrigation & Drainage</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-4.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Garden Maintenance</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-5.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Green Technology</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded d-flex h-100">
-              <div class="service-img rounded">
-                <img class="img-fluid" src="img/service-6.jpg" alt="" />
-              </div>
-              <div class="service-text rounded p-5">
-                <div class="btn-square rounded-circle mx-auto mb-3">
-                  <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
-                </div>
-                <h4 class="mb-3">Urban Gardening</h4>
-                <p class="mb-4">
-                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                  lorem sed diam stet diam sed stet.
-                </p>
-                <a class="btn btn-sm" href=""
-                  ><i class="fa fa-plus text-primary me-2"></i>Read More</a
-                >
-              </div>
-            </div>
-          </div>
+        <!-- Mission Card -->
+        <div class="vm-card">
+          <h3>Our Mission</h3>
+          <p>
+            To empower the farming community by manufacturing high-quality,
+            research-driven products—ranging from traditional agrochemicals to
+            advanced biostimulants—that enhance soil health, increase crop
+            yields, and maximize grower profitability.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+  </section>
 
-    <!-- Quote Start -->
-    <div
-      class="container-fluid quote my-5 py-5"
-      data-parallax="scroll"
-      data-image-src="img/carousel-2.jpg"
-    >
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-7">
-            <div
-              class="bg-white rounded p-4 p-sm-5 wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0"
-                      id="gname"
-                      placeholder="Gurdian Name"
-                    />
-                    <label for="gname">Your Name</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control bg-light border-0"
-                      id="gmail"
-                      placeholder="Gurdian Email"
-                    />
-                    <label for="gmail">Your Email</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0"
-                      id="cname"
-                      placeholder="Child Name"
-                    />
-                    <label for="cname">Your Mobile</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0"
-                      id="cage"
-                      placeholder="Child Age"
-                    />
-                    <label for="cage">Service Type</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control bg-light border-0"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style="height: 100px"
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-primary py-3 px-4" type="submit">
-                    Submit Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!--Vision And Mission end-->
+
+  <!--why choose us start -->
+  <section class="why-section">
+    <div class="why-container">
+      <h2 class="why-title">Why MKGL?</h2>
+      <p class="why-subtitle">Every Product Committed To The Farmers ....!</p>
+
+      <div class="why-cards">
+        <div class="why-card">
+          <h3>•Research-Driven Formulations:</h3>
+          <p>
+            Our R&D team works tirelessly to create products that work in
+            diverse climates and soil types.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>•Farmer-Centric Approach:</h3>
+          <p>
+            We don't just sell products; we provide solutions. Every
+            formulation is designed to solve a specific problem, whether it’s
+            nutrient lockout, pest pressure, or soil depletion.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>•Manufacturing Excellence:</h3>
+          <p>
+            Our state-of-the-art facility utilizes advanced automation to
+            ensure that every batch of MKGL product is consistent, potent, and
+            pure.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>•Research-Driven Formulations:</h3>
+          <p>
+            Our R&D team works tirelessly to create products that work in
+            diverse climates and soil types.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Quote End -->
+  </section>
+  <!--why choose us end -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="text-center mx-auto wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <p class="fs-5 fw-bold text-primary">Our Projects</p>
-          <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-12 text-center">
-            <ul class="list-inline rounded mb-5" id="portfolio-flters">
-              <li class="mx-2 active" data-filter="*">All</li>
-              <li class="mx-2" data-filter=".first">Complete Projects</li>
-              <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row g-4 portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner rounded">
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+        <p class="fs-5 fw-bold text-primary">Our Services</p>
+        <h1 class="display-5 mb-5">Services That We Offer For You</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-1.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Landscaping</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-1.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
               </div>
+              <h4 class="mb-3">Landscaping</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner rounded">
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-2.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Pruning plants</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-2.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
               </div>
+              <h4 class="mb-3">Pruning plants</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner rounded">
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-3.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Irrigation & Drainage</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-3.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
               </div>
+              <h4 class="mb-3">Irrigation & Drainage</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner rounded">
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-4.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Garden Maintenance</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-4.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon" />
               </div>
+              <h4 class="mb-3">Garden Maintenance</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner rounded">
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-5.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Green Technology</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-5.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon" />
               </div>
+              <h4 class="mb-3">Green Technology</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner rounded">
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-img rounded">
               <img class="img-fluid" src="img/service-6.jpg" alt="" />
-              <div class="portfolio-text">
-                <h4 class="text-white mb-4">Urban Gardening</h4>
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg-square rounded-circle mx-2"
-                    href="img/service-6.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a class="btn btn-lg-square rounded-circle mx-2" href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
+            </div>
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
+              </div>
+              <h4 class="mb-3">Urban Gardening</h4>
+              <p class="mb-4">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+              <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- Quote Start -->
+  <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+            <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name" />
+                  <label for="gname">Your Name</label>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Projects End -->
-
-    <section class="quality-section">
-      <div class="quality-container">
-        <h2 class="quality-title">The MKGL Quality Benchmark</h2>
-        <p class="quality-intro">
-          We operate a state-of-the-art manufacturing facility where every
-          product undergoes a rigorous three-tier quality assurance process.
-        </p>
-
-        <div class="quality-steps">
-          <div class="quality-card">
-            <span class="step-number">01</span>
-            <h3>Raw Material Purity</h3>
-            <p>
-              Sourcing only the highest grade inputs to ensure consistency,
-              effectiveness, and safety from the very beginning.
-            </p>
-          </div>
-
-          <div class="quality-card">
-            <span class="step-number">02</span>
-            <h3>In-Process Monitoring</h3>
-            <p>
-              Precision mixing and formulation control through continuous
-              monitoring to maintain exact specifications at every stage.
-            </p>
-          </div>
-
-          <div class="quality-card">
-            <span class="step-number">03</span>
-            <h3>Final Batch Testing</h3>
-            <p>
-              Comprehensive testing to ensure every bottle or bag meets the
-              promised concentration and quality standards.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-            <p class="fs-5 fw-bold text-primary">Testimonial</p>
-            <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-            <p class="mb-4">
-              Trusted by farmers, distributors, and agribusiness partners across
-              regions
-            </p>
-            <a class="btn btn-primary py-3 px-4" href="">See More</a>
-          </div>
-          <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="owl-carousel testimonial-carousel">
-              <div class="testimonial-item">
-                <img
-                  class="img-fluid rounded mb-3"
-                  src="img/testominal.jfif"
-                  alt=""
-                />
-                <p class="fs-5">
-                  “MKGL products have significantly improved soil health &
-                  crop yield on farm. The quality and consistency are truly
-                  outstanding.”
-                </p>
-                <h4>Ramesh Patil</h4>
-                <span>Progressive Farmer</span>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email" />
+                  <label for="gmail">Your Email</label>
+                </div>
               </div>
-              <div class="testimonial-item">
-                <img
-                  class="img-fluid rounded mb-3"
-                  src="img/testimonial-2.jpg"
-                  alt=""
-                />
-                <p class="fs-5">
-                  “Their biostimulant range delivers visible results. MKGL has
-                  become our most trusted partner for crop solutions.”
-                </p>
-                <h4>Sunil Deshmukh</h4>
-                <span>Agriculture Distributor</span>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name" />
+                  <label for="cname">Your Mobile</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age" />
+                  <label for="cage">Service Type</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message"
+                    style="height: 100px"></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary py-3 px-4" type="submit">
+                  Submit Now
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+  </div>
+  <!-- Quote End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">Our Office</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>31 A, Banpuri, Tal.
-              Khatav, Dist. Satara, Pin - 415507
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+91 9270107722
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>mkglagro7722@gmail.com
-            </p>
-            <div class="d-flex pt-2">
-              <a
-                class="btn btn-square btn-outline-light rounded-circle me-2"
-                href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light rounded-circle me-2"
-                href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light rounded-circle me-2"
-                href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light rounded-circle me-2"
-                href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+  <!-- Projects Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+        <p class="fs-5 fw-bold text-primary">Our Projects</p>
+        <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+      </div>
+      <div class="row wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-12 text-center">
+          <ul class="list-inline rounded mb-5" id="portfolio-flters">
+            <li class="mx-2 active" data-filter="*">All</li>
+            <li class="mx-2" data-filter=".first">Complete Projects</li>
+            <li class="mx-2" data-filter=".second">Ongoing Projects</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row g-4 portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-1.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Landscaping</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">Services</h4>
-            <a class="btn btn-link" href="">Landscaping</a>
-            <a class="btn btn-link" href="">Pruning plants</a>
-            <a class="btn btn-link" href="">Urban Gardening</a>
-            <a class="btn btn-link" href="">Garden Maintenance</a>
-            <a class="btn btn-link" href="">Green Technology</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">Quick Links</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">Newsletter</h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative w-100">
-              <input
-                class="form-control bg-light border-light w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-2.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Pruning plants</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
             </div>
           </div>
-          <div class="container copyright text-center mt-4">
-            <p>
-              © <span>Copyright</span>
-              <strong class="px-1 sitename"
-                >MKGL BIO SCIENCE AGRO PVT. LTD.</strong
-              >
-              <span>All Rights Reserved</span>
-            </p>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you've purchased the pro version. -->
-              <!-- Licensing information: https://www.ewebdigital.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-              Designed by
-              <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-3.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Irrigation & Drainage</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-4.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Garden Maintenance</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-5.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Green Technology</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+          <div class="portfolio-inner rounded">
+            <img class="img-fluid" src="img/service-6.jpg" alt="" />
+            <div class="portfolio-text">
+              <h4 class="text-white mb-4">Urban Gardening</h4>
+              <div class="d-flex">
+                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i
+                    class="fa fa-eye"></i></a>
+                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Projects End -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <section class="quality-section">
+    <div class="quality-container">
+      <h2 class="quality-title">The MKGL Quality Benchmark</h2>
+      <p class="quality-intro">
+        We operate a state-of-the-art manufacturing facility where every
+        product undergoes a rigorous three-tier quality assurance process.
+      </p>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <div class="quality-steps">
+        <div class="quality-card">
+          <span class="step-number">01</span>
+          <h3>Raw Material Purity</h3>
+          <p>
+            Sourcing only the highest grade inputs to ensure consistency,
+            effectiveness, and safety from the very beginning.
+          </p>
+        </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+        <div class="quality-card">
+          <span class="step-number">02</span>
+          <h3>In-Process Monitoring</h3>
+          <p>
+            Precision mixing and formulation control through continuous
+            monitoring to maintain exact specifications at every stage.
+          </p>
+        </div>
+
+        <div class="quality-card">
+          <span class="step-number">03</span>
+          <h3>Final Batch Testing</h3>
+          <p>
+            Comprehensive testing to ensure every bottle or bag meets the
+            promised concentration and quality standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="fs-5 fw-bold text-primary">Testimonial</p>
+          <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
+          <p class="mb-4">
+            Trusted by farmers, distributors, and agribusiness partners across
+            regions
+          </p>
+          <a class="btn btn-primary py-3 px-4" href="">See More</a>
+        </div>
+        <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item">
+              <img class="img-fluid rounded mb-3" src="img/testominal.jfif" alt="" />
+              <p class="fs-5">
+                “MKGL products have significantly improved soil health &
+                crop yield on farm. The quality and consistency are truly
+                outstanding.”
+              </p>
+              <h4>Ramesh Patil</h4>
+              <span>Progressive Farmer</span>
+            </div>
+            <div class="testimonial-item">
+              <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="" />
+              <p class="fs-5">
+                “Their biostimulant range delivers visible results. MKGL has
+                become our most trusted partner for crop solutions.”
+              </p>
+              <h4>Sunil Deshmukh</h4>
+              <span>Agriculture Distributor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Our Office</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>31 A, Banpuri, Tal.
+            Khatav, Dist. Satara, Pin - 415507
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+91 9270107722
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>mkglagro7722@gmail.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Services</h4>
+          <a class="btn btn-link" href="">Landscaping</a>
+          <a class="btn btn-link" href="">Pruning plants</a>
+          <a class="btn btn-link" href="">Urban Gardening</a>
+          <a class="btn btn-link" href="">Garden Maintenance</a>
+          <a class="btn btn-link" href="">Green Technology</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Newsletter</h4>
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <div class="position-relative w-100">
+            <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
+              placeholder="Your email" />
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+              SignUp
+            </button>
+          </div>
+        </div>
+        <div class="container copyright text-center mt-4">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">MKGL BIO SCIENCE AGRO PVT. LTD.</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://www.ewebdigital.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by
+            <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
