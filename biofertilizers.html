@@ -30,6 +30,86 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f8f5;
+    margin:0;
+    padding:40px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+.section-title h2{
+    color:#2f7d32;
+    font-size:36px;
+}
+.section-title p{
+    color:#555;
+    max-width:700px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#2f7d32;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    font-size:45px;
+    color:#2f7d32;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:10px;
+    color:#333;
+}
+
+.card p{
+    font-size:15px;
+    color:#666;
+    line-height:1.6;
+}
+
+.card ul{
+    padding-left:18px;
+    margin-top:10px;
+}
+.card ul li{
+    font-size:14px;
+    color:#555;
+    margin-bottom:6px;
+}
+    </style>
 </head>
 
 <body>
@@ -67,7 +147,7 @@
     <!-- Topbar End -->
 
 
-      <!-- Navbar Start -->
+     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
       <a
         href="index.html"
@@ -111,15 +191,16 @@
     </nav>
     <!-- Navbar End -->
 
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Projects</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Our Team</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
                 </ol>
             </nav>
         </div>
@@ -127,103 +208,88 @@
     <!-- Page Header End -->
 
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">1. Biofertilizers</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Biostimulants</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Micronutrients</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Water Soluble Fertilizers (WSF)</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Organic Fertilizers</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="biofertilizers.html"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Agrochemicals</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="section-title">
+    <h2>Biofertilizers</h2>
+    <p>Nature’s Soil Builders that enrich soil health, boost crop productivity, and reduce chemical dependency.</p>
+</div>
+
+<div class="cards">
+
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Nitrogen Fixing Biofertilizers</h3>
+        <p>Living microorganisms that convert atmospheric nitrogen into usable forms for plants.</p>
+        <ul>
+            <li>Improves nitrogen availability</li>
+            <li>Boosts plant growth</li>
+            <li>Reduces urea usage</li>
+        </ul>
     </div>
-    <!-- Projects End -->
 
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-icon">🌿</div>
+        <h3>Phosphorus Solubilizers</h3>
+        <p>Enhances the solubility of insoluble phosphorus present in soil.</p>
+        <ul>
+            <li>Improves root development</li>
+            <li>Better flowering & yield</li>
+            <li>Reduces DAP dependency</li>
+        </ul>
+    </div>
 
-   
-     <!-- Footer Start -->
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-icon">🍃</div>
+        <h3>Potassium Mobilizers</h3>
+        <p>Mobilizes potassium from soil minerals to make it accessible to plants.</p>
+        <ul>
+            <li>Improves crop quality</li>
+            <li>Enhances stress resistance</li>
+            <li>Strengthens plant immunity</li>
+        </ul>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-icon">🌾</div>
+        <h3>Rhizosphere Enhancers</h3>
+        <p>Colonizes plant roots to increase nutrient absorption and soil microbial activity.</p>
+        <ul>
+            <li>Improves nutrient uptake</li>
+            <li>Healthy root zone</li>
+            <li>Higher productivity</li>
+        </ul>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>Soil Health Restorers</h3>
+        <p>Restores soil fertility and long-term vitality naturally.</p>
+        <ul>
+            <li>Improves soil structure</li>
+            <li>Enhances organic matter</li>
+            <li>Sustainable farming solution</li>
+        </ul>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+        <div class="card-icon">♻️</div>
+        <h3>Eco-Friendly Solution</h3>
+        <p>Reduces chemical fertilizer usage while promoting sustainable agriculture.</p>
+        <ul>
+            <li>Environment safe</li>
+            <li>Cost effective</li>
+            <li>Long-term yield improvement</li>
+        </ul>
+    </div>
+
+</div>
+
+ <!-- Footer Start -->
     <div
       class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
       data-wow-delay="0.1s"
@@ -313,6 +379,7 @@
       </div>
     </div>
     <!-- Footer End -->
+
 
 
     <!-- Back to Top -->
