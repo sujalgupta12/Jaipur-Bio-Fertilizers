@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>MKGl</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/with_bg_logo.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /* WHY SECTION */
+        .why-section {
+            background: linear-gradient(135deg, #788b89, #728f8c, #49585f);
+            padding: 80px 20px;
+            color: #fff;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .why-container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .why-title {
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .why-subtitle {
+            font-size: 16px;
+            color: #541313;
+            margin-bottom: 50px;
+        }
+
+        /* Cards */
+        .why-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .why-card {
+            background: #ffffff;
+            color: #333;
+            padding: 30px 25px;
+            border-radius: 15px;
+            transition: 0.4s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .why-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #076940;
+        }
+
+        .why-card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Hover Effect */
+        .why-card:hover {
+            transform: translateY(-10px);
+            background: #2c5364;
+            color: #fff;
+        }
+
+        .why-card:hover h3 {
+            color: #fff;
+        }
+
+        /* Vision & Mission Section */
+        .vm-section {
+            padding: 90px 20px;
+            background: #f4f9f4;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .vm-container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .vm-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1f4d2b;
+            margin-bottom: 10px;
+        }
+
+        .vm-subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 60px;
+        }
+
+        /* Cards Layout */
+        .vm-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Individual Card */
+        .vm-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transition: 0.4s ease;
+            position: relative;
+        }
+
+        /* Top Accent Line */
+        .vm-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #2e7d32, #66bb6a);
+            border-radius: 18px 18px 0 0;
+        }
+
+        .vm-card h3 {
+            font-size: 26px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .vm-card p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Hover Effect */
+        .vm-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Quality Benchmark Section */
+        .quality-section {
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #f1f8f4, #ffffff);
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .quality-container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .quality-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1f4d2b;
+            margin-bottom: 15px;
+        }
+
+        .quality-intro {
+            font-size: 16px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        /* Steps Layout */
+        .quality-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Design */
+        .quality-card {
+            background: #ffffff;
+            padding: 45px 30px;
+            border-radius: 20px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+            transition: 0.4s ease;
+            position: relative;
+            text-align: left;
+        }
+
+        /* Step Number */
+        .step-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: rgba(46, 125, 50, 0.15);
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+
+        /* Card Text */
+        .quality-card h3 {
+            font-size: 24px;
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .quality-card p {
+            font-size: 15.5px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* Hover Effect */
+        .quality-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+91 9270107722</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>mkglagro7722@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <!-- <h1 class="m-0">Gardener</h1> -->
+            <img src="img/logo/logo.png" alt="" style="max-width: 94px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="project.html" class="nav-item nav-link">products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-item nav-link">blog</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+      <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Product </h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Product </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+ 
+
+    <!-- Product Portfolio Section -->
+    <section class="section nt-bg">
+        <div class="container section-title text-center" data-aos="fade-up">
+            <span class="description-title" style="font-size:33px;font-weight: 800;">
+                Our Diverse Product Portfolio
+            </span>
+            <p>
+                Scientifically formulated solutions for complete plant health, soil vitality,
+                and sustainable agriculture.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                <!-- 1. Aceto -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Bio Stimulant</span>
+                            <img src="product_info/aceto.png" alt="Aceto">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Aceto</h4>
+                            <p class="adv-desc">
+                                Enhances plant metabolism, improves nutrient uptake,
+                                and promotes vigorous crop growth.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Plant Vigor</span><span>Growth Booster</span><span>Crop Safe</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Aceto Liquid -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Liquid Bio Stimulant</span>
+                            <img src="product_info/aceto.png" alt="Aceto Liquid">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Aceto Liquid</h4>
+                            <p class="adv-desc">
+                                Fast-absorbing liquid formulation for quick plant energy
+                                and early stage crop development.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Quick Action</span><span>Root Support</span><span>Yield Boost</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. KMB Liquid -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Bio Fertilizer</span>
+                            <img src="product_info/kmb_liq.png" alt="KMB Liquid">
+                        </div>
+                        <div class="adv-content">
+                            <h4>KMB Liquid</h4>
+                            <p class="adv-desc">
+                                Potassium Mobilizing Bacteria that unlocks soil potassium
+                                for stronger crops and better quality yield.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Potassium Mobilizer</span><span>Soil Health</span><span>Sustainable</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Mychosphere -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Mycorrhiza</span>
+                            <img src="product_info/mychosphere.png" alt="Mychosphere">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Mychosphere</h4>
+                            <p class="adv-desc">
+                                Improves root surface area, water absorption,
+                                and increases stress tolerance in crops.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Root Expansion</span><span>Water Efficiency</span><span>Stress Control</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Nutriplus -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Micronutrients</span>
+                            <img src="product_info/nutriplus.png" alt="Nutriplus">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Nutriplus</h4>
+                            <p class="adv-desc">
+                                Balanced micronutrient blend to correct deficiencies
+                                and improve crop quality and uniform growth.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Balanced Nutrition</span><span>Deficiency Control</span><span>Quality Yield</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Pest Fire Powder -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Organic Pest Control</span>
+                            <img src="product_info/pest_fire_poweder.png" alt="Pest Fire Powder">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Pest Fire (Powder)</h4>
+                            <p class="adv-desc">
+                                Botanical powder that controls harmful insects
+                                while maintaining ecological balance.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Organic</span><span>Pest Control</span><span>Residue Free</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Pest Fire Liquid -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Bio Insecticide</span>
+                            <img src="product_info/pest_fire.png" alt="Pest Fire Liquid">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Pest Fire (Liquid)</h4>
+                            <p class="adv-desc">
+                                Fast-acting bio-insecticide effective against sucking
+                                and chewing pests.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Rapid Control</span><span>Crop Safe</span><span>Eco Friendly</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. PSB Liquid -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Bio Fertilizer</span>
+                            <img src="product_info/psb_liq.png" alt="PSB Liquid">
+                        </div>
+                        <div class="adv-content">
+                            <h4>PSB Liquid</h4>
+                            <p class="adv-desc">
+                                Phosphate Solubilizing Bacteria that increases
+                                phosphorus availability in soil.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Phosphorus Release</span><span>Root Growth</span><span>Soil Health</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Root Booster -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Root Enhancer</span>
+                            <img src="product_info/root_booster.png" alt="Root Booster">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Root Booster</h4>
+                            <p class="adv-desc">
+                                Encourages deeper root growth,
+                                stronger anchorage, and nutrient absorption.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Strong Roots</span><span>Stress Tolerance</span><span>Crop Strength</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Sampurnam Liquid -->
+                <div class="  col-lg-4 col-md-6">
+                    <div class="adv-product-card">
+                        <div class="adv-image">
+                            <span class="badge-category">Organic Nutrition</span>
+                            <img src="product_info/sampurnam_liq.png" alt="Sampurnam Liquid">
+                        </div>
+                        <div class="adv-content">
+                            <h4>Sampurnam Liquid</h4>
+                            <p class="adv-desc">
+                                Improves soil biology, nutrient availability,
+                                and long-term crop productivity.
+                            </p>
+                            <div class="adv-tags">
+                                <span>Soil Enrichment</span><span>Organic</span><span>Plant Health</span>
+                            </div>
+                            <a href="#" class="adv-btn">View Product</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>31 A, Banpuri, Tal.
+                        Khatav, Dist. Satara, Pin - 415507
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+91 9270107722
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>mkglagro7722@gmail.com
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Landscaping</a>
+                    <a class="btn btn-link" href="">Pruning plants</a>
+                    <a class="btn btn-link" href="">Urban Gardening</a>
+                    <a class="btn btn-link" href="">Garden Maintenance</a>
+                    <a class="btn btn-link" href="">Green Technology</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email" />
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            SignUp
+                        </button>
+                    </div>
+                </div>
+                <div class="container copyright text-center mt-4">
+                    <p>
+                        © <span>Copyright</span>
+                        <strong class="px-1 sitename">MKGL BIO SCIENCE AGRO PVT. LTD.</strong>
+                        <span>All Rights Reserved</span>
+                    </p>
+                    <div class="credits">
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you've purchased the pro version. -->
+                        <!-- Licensing information: https://www.ewebdigital.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                        Designed by
+                        <a href="https://www.ewebdigital.com/">Vighnaharta Web Digital</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

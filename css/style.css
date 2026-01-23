@@ -570,7 +570,7 @@ img:hover {
 .adv-image {
   position: relative;
   height: 230px;
-  background: radial-gradient(circle at top, #1f8f3a, #0b3d1e);
+  /* background: radial-gradient(circle at top, #1f8f3a, #0b3d1e); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -622,7 +622,7 @@ img:hover {
 .adv-content h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #1f8f3a;
+  color: #000;
   margin-bottom: 10px;
 }
 
